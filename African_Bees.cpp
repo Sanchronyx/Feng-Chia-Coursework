@@ -16,25 +16,6 @@ Total Bees after N years
 
 #include <stdio.h>
 
-int female(int bee){
-    int immortal_bee = 0, i = 0;
-    int female_bee = 0;
-    int male_bee;
-    for (i = 1; ;i++){
-        immortal_bee += 1;
-        if (i == 1){
-            female_bee += 0;
-            male_bee += 0;
-        }
-        else {
-            female_bee += 1;
-            male_bee += 1;
-        }
-        male_bee -= 1;
-        female_bee -= 1;
-    }
-}
-
 int main(void){
 
     int n = 0, i = 0;
@@ -44,8 +25,8 @@ int main(void){
         
         scanf("%d", &n);
         for (i = 1; i <= n; i++){
-            if (i == 1) fb += 0;
-            else fb += 1; // Immortal Female Bee -> Male Bee
+            if (i == 1) ifb += 0;
+            else ifb = i; // Immortal Female Bee -> Male Bee
             mb += 1; // Male Bee -> Male Bee
             if (i == 1)fb += 0; // Female Bee -> Male Bee
             else fb += 1; // Female Bee -> Female Bee
