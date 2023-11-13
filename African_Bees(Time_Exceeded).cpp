@@ -18,9 +18,9 @@ Total Bees after N years
 
 int main(void){
 
-    int n = 0, i = 0;
-    int fb = 0, mb = 0, ifb = 0, tmb = 0, ffb = 0;
-    int tnmb = 0;
+    long long int n = 0, i = 0;
+    long long int fb = 0, mb = 0, ifb = 0, tmb = 0, ffb = 0;
+    long long int tnmb = 0;
     while (n!=-1){
         
         scanf("%d", &n);
